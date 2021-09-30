@@ -91,7 +91,7 @@ export const Calculator = () => {
           <TotalDisplay value={getDisplayValue()} />
           <div className="row details">
             <span id="operation">
-              <b>Operation:</b>
+              <b>Operation: </b>
               {calcState.operation}
             </span>
             <span id="memory">
@@ -136,7 +136,7 @@ export const Calculator = () => {
             {" "}
             <CalcButton
               value={"CE"}
-              onClick={() => handleButtonClick(calcState.total === '')}
+              onClick={() => setCalcState({ ...calcState, total: 0 })}
             />
             <CalcButton value={0} onClick={() => handleButtonClick("0")} />
             <CalcButton value={"="} onClick={() => handleButtonClick("=")} />
