@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
+        <a  href="www.yahoo.com" className="navbar-brand">
           <img width="40px" src="./Lambda-Logo-Red.png" alt="lambda logo" />{" "}
           Lambda Reducer Challenge
         </a>
